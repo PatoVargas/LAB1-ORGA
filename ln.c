@@ -5,7 +5,7 @@ double ln(double n){
 	a = n-1;			
 	b = n+1;
 	c = a/b;
-	y = c +				
+	y = c +				//realizaremos solo parte de la serie de taylor, para i = 0 hasta 7
 	c*c*c/3+
 	c*c*c*c*c/5+
 	c*c*c*c*c*c*c/7+
