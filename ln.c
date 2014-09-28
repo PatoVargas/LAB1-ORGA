@@ -32,4 +32,4 @@ int main(){
 	printf("el ln del numero es: %f\n", a);
 	}
 
-
+probando probando
