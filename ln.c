@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//Esta es la primera version de nuestro programa
 double ln(double n){
 	double y,a,b,c;			//y para guardar el ln de n
 	a = n-1;			
