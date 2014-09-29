@@ -13,10 +13,6 @@ double ln(double n){
 	c = (n-1)/(n+1);
 	c1 = c*c;
 	c2 = c*c*c*c;
-	c3 = c*c*c*c*c*c;
-	c4 = c*c*c*c*c*c*c*c;
-	c5 = c*c*c*c*c*c*c*c*c*c;
-	c6 = c*c*c*c*c*c*c*c*c*c*c*c;
 	y = 2*(c*(a0+ a1*c1+ a2*c2+ a3*c3+ a4*c4+ a5*c5+ a6*c6));
 	return y;
 } 
