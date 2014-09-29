@@ -9,7 +9,7 @@ double static a5 = 0.090909090909; // para guardar 1/11
 double static a6 = 0.076923076923; // para guardar 1/13
 
 int ln(double n){
-  double y,a,b,c; //y para guardar el ln de n 
+  	double y,a,b,c; //y para guardar el ln de n 
 	a = n-1; 
 	b = n+1; 
 	c = a/b; 
@@ -25,15 +25,15 @@ int ln(double n){
     
 
 int main(){
-  double numero;
-  int i,iteraciones;
-  printf("ingrese un numero: ");
-  scanf("%lf",&numero);
-  printf("ingrese cantidad de iteraciones: ");
-  scanf("%i",&iteraciones);
-  double a = 0;
-  for(i=0;i<iteraciones;i++){		//ciclo for para realizar la cantidad de iteraciones que se ingresen
+  	double numero;
+  	int i,iteraciones;
+  	printf("ingrese un numero: ");
+  	scanf("%lf",&numero);
+  	printf("ingrese cantidad de iteraciones: ");
+  	scanf("%i",&iteraciones);
+  	double a = 0;
+  	for(i=0;i<iteraciones;i++){		//ciclo for para realizar la cantidad de iteraciones que se ingresen
   	a = ln(numero);
-  }
-  printf("el ln del numero es: %f\n", a);  //imprime resultado final del ln pedido
+	}
+	printf("el ln del numero es: %f\n", a);  //imprime resultado final del ln pedido
 }
