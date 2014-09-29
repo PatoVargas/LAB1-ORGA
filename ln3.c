@@ -17,13 +17,7 @@ double ln(double n){
 	c4 = c*c*c*c*c*c*c*c;
 	c5 = c*c*c*c*c*c*c*c*c*c;
 	c6 = c*c*c*c*c*c*c*c*c*c*c*c;
-	y = 2*(a0*c+       //representacion de la serie de taylor
-	a1*c*c*c+ 
-	a2*c*c*c*c*c+ 
-	a3*c*c*c*c*c*c*c+ 
-	a4*c*c*c*c*c*c*c*c*c+ 
-	a5*c*c*c*c*c*c*c*c*c*c*c+ 
-	a6*c*c*c*c*c*c*c*c*c*c*c*c*c); 
+	y = 2*(c*(a0+ a1*c1+ a2*c2+ a3*c3+ a4*c4+ a5*c5+ a6*c6));
 	return y;
 } 
     
