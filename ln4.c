@@ -9,11 +9,11 @@ double static a5 = 0.090909090909; // para guardar 1/11
 double static a6 = 0.076923076923; // para guardar 1/13
 
 double ln(double n){
-  	double y,a,b,c,c1,c2,c3,c4,c5,c6; //y para guardar el ln de n 
+  	double y,c,c1,c2; //y para guardar el ln de n 
 	c = (n-1)/(n+1);
-	c1 = c*c;
+	c1 = c*c;   //Factorizamos para reducir tiempos de espera
 	c2 = c*c*c*c;
-	y = 2*(c*(a0+ a1*c1+ a2*c2+ a3*c3+ a4*c4+ a5*c5+ a6*c6));
+	y = 2*(c*(a0+ c1*(a1+ a2*c1+ c2*(a3+ a4*c1+ a5*c2+ a6*c1*c2))));;
 	return y;
 } 
     
