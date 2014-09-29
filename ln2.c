@@ -9,7 +9,7 @@ double static a5 = 0.090909090909; // para guardar 1/11
 double static a6 = 0.076923076923; // para guardar 1/13
 
 double ln(double n){
-  	double y,a,b,c; //y para guardar el ln de n 
+  	double y,c; //y para guardar el ln de n 
 	c = (n-1)/(n+1); 
 	y = a0*c+       //representacion de la serie de taylor
 	a1*c*c*c+ 
