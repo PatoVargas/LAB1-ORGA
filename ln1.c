@@ -32,8 +32,8 @@ int main(){
   printf("ingrese cantidad de iteraciones: ");
   scanf("%i",&iteraciones);
   double a = 0;
-  for(i=0;i<iteraciones;i++){
+  for(i=0;i<iteraciones;i++){		//ciclo for para realizar la cantidad de iteraciones que se ingresen
   	a = ln(numero);
   }
-  printf("el ln del numero es: %f\n", a);
+  printf("el ln del numero es: %f\n", a);  //imprime resultado final del ln pedido
 }
