@@ -6,4 +6,13 @@ double static a2 = 0.2;
 double static a3 = 0.1428571428571; 
 double static a4 = 0.1111111111111; 
 double static a5 = 0.090909090909; 
-double static a6 = 0.076923076923; 
+double static a6 = 0.076923076923;
+
+int main(){
+  double numero;
+  int iteraciones;
+  printf("ingrese un numero: ");
+  scanf("%lf",&numero);
+  printf("ingrese cantidad de iteraciones: ");
+  scanf("%i",&iteraciones);
+}
