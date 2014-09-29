@@ -8,7 +8,7 @@ double static a4 = 0.1111111111111; // para guardar 1/9
 double static a5 = 0.090909090909; // para guardar 1/11
 double static a6 = 0.076923076923; // para guardar 1/13
 
-int ln(double n){
+double ln(double n){
   	double y,a,b,c; //y para guardar el ln de n 
 	a = n-1; 
 	b = n+1; 
