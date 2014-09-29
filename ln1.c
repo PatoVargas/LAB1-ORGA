@@ -1,6 +1,6 @@
 #include <stdio.h> 
 
-double static a0 = 1.0; //para guarda 1
+double static a0 = 1.0; //para guardar 1
 double static a1 = 0.3333333333333; // para guardar 1/3
 double static a2 = 0.2;             // para guardar 1/5
 double static a3 = 0.1428571428571; // para guardar 1/7
