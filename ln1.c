@@ -26,9 +26,14 @@ int ln(double n){
 
 int main(){
   double numero;
-  int iteraciones;
+  int i,iteraciones;
   printf("ingrese un numero: ");
   scanf("%lf",&numero);
   printf("ingrese cantidad de iteraciones: ");
   scanf("%i",&iteraciones);
+  double a = 0;
+  for(i=0;i<iteraciones;i++){
+  	a = ln(numero);
+  }
+  printf("el ln del numero es: %f\n", a);
 }
