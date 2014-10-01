@@ -1,4 +1,7 @@
-#include <stdio.h> 
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <getopt.h>
 
 double static a0 = 1.0; //para guardar 1
 double static a1 = 0.3333333333333; // para guardar 1/3
@@ -55,3 +58,4 @@ int main(int argc, char **argv){		//funcion principal
 	}
 	printf("%f\n", a);  			//imprime resultado final del ln pedido
     
+}
