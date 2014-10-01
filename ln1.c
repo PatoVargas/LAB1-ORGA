@@ -8,12 +8,12 @@ double static a4 = 0.1111111111111; // para guardar 1/9
 double static a5 = 0.090909090909; // para guardar 1/11
 double static a6 = 0.076923076923; // para guardar 1/13
 
-double ln(double n){
-  	double y,a,b,c; //y para guardar el ln de n 
+double ln(double n){		//función de ln
+  	double y,a,b,c; 	//y para guardar el ln de n 
 	a = n-1; 
 	b = n+1; 
 	c = a/b; 
-	y = a0*c+       //representacion de la serie de taylor
+	y = a0*c+       	//representacion de la serie de taylor
 	a1*c*c*c+ 
 	a2*c*c*c*c*c+ 
 	a3*c*c*c*c*c*c*c+ 
@@ -31,9 +31,9 @@ int main(){
   	scanf("%lf",&numero);
   	printf("ingrese cantidad de iteraciones: ");
   	scanf("%i",&iteraciones);
-  	double a = 0;
+  	double a = 0;				//definimos una variable a para guardar el numero
   	for(i=0;i<iteraciones;i++){		//ciclo for para realizar la cantidad de iteraciones que se ingresen
-  	a = ln(numero);
+  	a = ln(numero);				//se llama a la función ln() para el numero y el resultado lo guardamos en a
 	}
-	printf("el ln del numero es: %f\n", a);  //imprime resultado final del ln pedido
+	printf("%f\n", a);  			//imprime resultado final del ln pedido
 }
