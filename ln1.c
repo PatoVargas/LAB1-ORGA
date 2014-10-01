@@ -24,16 +24,37 @@ double ln(double n){		//función de ln
 } 
     
 
-int main(){
-  	double numero;
-  	int i,iteraciones;
-  	printf("ingrese un numero: ");
-  	scanf("%lf",&numero);
-  	printf("ingrese cantidad de iteraciones: ");
-  	scanf("%i",&iteraciones);
+int main(int argc, char **argv){		//funcion principal
+  	extern char *optarg;
+  	int opcion, error = 0;
+  	int esta_i = 0, esta_n = 0;
+  	int numero = 0, iteraciones = 0,i;
+  	while((opcion = getopt(argc, argv, "i:n:"))!=-1)
+  		switch (opcion){
+  			case 'i':
+  				esta_i = 1;
+  				iteraciones = atoi(optarg);
+  				break;
+  			case 'n':
+  				esta_n = 1;
+  				numero = atoi(optarg);
+  				break;
+  			case '?':
+  				error = 1;
+  				break;
+  		}
+  	if (esta_i == 0){
+  		printf("falta ingresar iteraciones \n");
+  	}
+  	if (esta_n == 0){
+  		printf("falta ingresar numero \n");
+  	}
+  	if (error == 1){
+  		printf("error de sintaxis");
+  	}
   	double a = 0;				//definimos una variable a para guardar el numero
   	for(i=0;i<iteraciones;i++){		//ciclo for para realizar la cantidad de iteraciones que se ingresen
-  	a = ln(numero);				//se llama a la función ln() para el numero y el resultado lo guardamos en a
+  		a = ln(numero);				//se llama a la función ln() para el numero y el resultado lo guardamos en a
 	}
 	printf("%f\n", a);  			//imprime resultado final del ln pedido
 }
