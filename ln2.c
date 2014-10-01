@@ -67,7 +67,7 @@ int main(int argc, char **argv){
 	//para calcular el ln 
 	double a = 0; 			//iniciamos un double para guardar el numero
 	for(i=0;i<iteraciones;i++){ 	// for para repetir el proceso de calculo en iteraciones
-		a = ln3(numero); 	// llamamos a la funcion ln para el numero y la guardamos en a
+		a = ln(numero); 	// llamamos a la funcion ln para el numero y la guardamos en a
 	} 
 	printf("%f\n", a); 		//devolver el valor del ln
 }
