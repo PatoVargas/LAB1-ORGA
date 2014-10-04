@@ -26,7 +26,8 @@ int main(int argc, char **argv){
 	extern char *optarg;			//arreglo definido por getopt
 	int opcion, error = 0;				// variables para el switch (opcion que se elige) y para un posible error respectivamente
 	int esta_i =0, esta_n=0;			// iniciamos variables para detectar si estan o no i y n en la linea de comando
-	int numero = 0, iteraciones =0,i;		//iniciamos las variables numero iteraciones e i
+	int iteraciones = 0,i;		//iniciamos las variables iteraciones e i
+	float numero = 0;		//iniciamos la variable numero
 	while((opcion = getopt(argc, argv, "i:n:"))!=-1) // while para recibir los argumento del argv
 		switch (opcion){			
 			case 'i':
@@ -37,7 +38,7 @@ int main(int argc, char **argv){
 			case 'n':
 				//en el caso de encontrar una n en la linea de comando	
 				esta_n =1; 	//registramos que había un n para el numero
-				numero = atoi(optarg); //atoi para transformar la cadena de caracteres recibidos en un int y guardarlo en numero
+				numero = atof(optarg); //atoi para transformar la cadena de caracteres recibidos en un int y guardarlo en numero
 				break;
 			case '?':
 				// en otro caso 
